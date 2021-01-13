@@ -16,7 +16,6 @@ class CreateProjectsUsersTable extends Migration
         Schema::create('project_user', function (Blueprint $table) {
             $table->foreignId('project_id');
             $table->foreignId('user_id');
-            $table->timestamps();
         });
     }
 
